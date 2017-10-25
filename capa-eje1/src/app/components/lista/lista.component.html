@@ -1,0 +1,11 @@
+<h2>Lista de Elementos</h2>
+<hr>
+<button (click)="agregar()">Agregar</button>
+<hr>
+<div class="lista">
+	<item *ngFor="let elemento of datos"
+		[datos]="elemento"
+		(borrar)="borrar($event)"
+	></item>
+</div>
+<hr>
