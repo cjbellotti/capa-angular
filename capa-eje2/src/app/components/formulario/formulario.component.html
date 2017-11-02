@@ -1,0 +1,9 @@
+<div class="formulario">
+	<h1>{{formatMessage('Pelu')}}</h1>
+	<input type="text" name="" [(ngModel)]="texto" 
+					(keyup)="enter($event)"
+					[class.error]="texto.length == 0">
+	<button (click)="agregar()"
+					[disabled]="texto.length == 0">Agregar</button>
+	<button (click)="cancelar()" [class.error]="texto.length == 0">Cancelar</button>
+</div>

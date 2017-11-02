@@ -1,0 +1,18 @@
+.item {
+	border-radius : 6px;
+	border : 1px solid #dddddd;
+	height : 40px;
+}
+
+.item > p {
+	margin-left: 10px;
+	display : inline-block;
+	width : 80%;
+	vertical-align: top;
+}
+
+.item > button {
+	float : right;
+	margin-top : 10px;
+	margin-right: 10px;
+}

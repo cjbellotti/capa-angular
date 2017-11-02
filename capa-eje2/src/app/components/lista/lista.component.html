@@ -1,0 +1,15 @@
+<h2>Lista de Elementos</h2>
+<hr>
+<button *ngIf="!nuevo"
+				(click)="switchNuevo()">Nuevo</button>
+<formulario *ngIf="nuevo" 
+					(agregar)="agregar($event)"
+					(cancelar)="cancelar()"></formulario>
+<hr>
+<div class="lista">
+	<item *ngFor="let elemento of datos"
+		[datos]="elemento"
+		(borrar)="borrar($event)"
+	></item>
+</div>
+<hr>
