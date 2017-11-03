@@ -1,0 +1,9 @@
+<form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)">
+  <label for="id">id</label>
+  <input type="number" name="id" id="id" ngModel required>
+  <label for="name">Nombre</label>
+  <input type="text" name="name" id="name" ngModel required>
+  <label for="fechaNac">Fecha Nacimiento</label>
+  <input type="date" name="date" id="date" ngModel required>
+  <input type="submit" value="Enviar" [disabled]="!formulario.valid">
+</form>
